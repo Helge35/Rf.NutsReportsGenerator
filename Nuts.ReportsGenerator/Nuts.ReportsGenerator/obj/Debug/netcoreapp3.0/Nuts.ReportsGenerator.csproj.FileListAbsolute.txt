@@ -1,0 +1,11 @@
+C:\Users\olegb\source\repos\Rf\Nuts.ReportsGenerator\Nuts.ReportsGenerator\bin\Debug\netcoreapp3.0\Nuts.ReportsGenerator.exe
+C:\Users\olegb\source\repos\Rf\Nuts.ReportsGenerator\Nuts.ReportsGenerator\bin\Debug\netcoreapp3.0\Nuts.ReportsGenerator.deps.json
+C:\Users\olegb\source\repos\Rf\Nuts.ReportsGenerator\Nuts.ReportsGenerator\bin\Debug\netcoreapp3.0\Nuts.ReportsGenerator.runtimeconfig.json
+C:\Users\olegb\source\repos\Rf\Nuts.ReportsGenerator\Nuts.ReportsGenerator\bin\Debug\netcoreapp3.0\Nuts.ReportsGenerator.runtimeconfig.dev.json
+C:\Users\olegb\source\repos\Rf\Nuts.ReportsGenerator\Nuts.ReportsGenerator\bin\Debug\netcoreapp3.0\Nuts.ReportsGenerator.dll
+C:\Users\olegb\source\repos\Rf\Nuts.ReportsGenerator\Nuts.ReportsGenerator\bin\Debug\netcoreapp3.0\Nuts.ReportsGenerator.pdb
+C:\Users\olegb\source\repos\Rf\Nuts.ReportsGenerator\Nuts.ReportsGenerator\obj\Debug\netcoreapp3.0\Nuts.ReportsGenerator.csprojAssemblyReference.cache
+C:\Users\olegb\source\repos\Rf\Nuts.ReportsGenerator\Nuts.ReportsGenerator\obj\Debug\netcoreapp3.0\Nuts.ReportsGenerator.AssemblyInfoInputs.cache
+C:\Users\olegb\source\repos\Rf\Nuts.ReportsGenerator\Nuts.ReportsGenerator\obj\Debug\netcoreapp3.0\Nuts.ReportsGenerator.AssemblyInfo.cs
+C:\Users\olegb\source\repos\Rf\Nuts.ReportsGenerator\Nuts.ReportsGenerator\obj\Debug\netcoreapp3.0\Nuts.ReportsGenerator.dll
+C:\Users\olegb\source\repos\Rf\Nuts.ReportsGenerator\Nuts.ReportsGenerator\obj\Debug\netcoreapp3.0\Nuts.ReportsGenerator.pdb

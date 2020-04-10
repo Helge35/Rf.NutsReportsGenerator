@@ -467,9 +467,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\olegb\\source\\repos\\Rf\\Nuts.ReportsGenerator\\Nuts.ReportsGeneratorSimulator\\Nuts.ReportsGeneratorSimulator.csproj",
+      "projectUniqueName": "C:\\Users\\olegb\\source\\repos\\Rf\\Nuts.ReportsGenerator\\Nuts.ReportsGeneratorSimulator\\Nuts.ReportsGenerator.Simulator.csproj",
       "projectName": "Nuts.ReportsGenerator.Simulator",
-      "projectPath": "C:\\Users\\olegb\\source\\repos\\Rf\\Nuts.ReportsGenerator\\Nuts.ReportsGeneratorSimulator\\Nuts.ReportsGeneratorSimulator.csproj",
+      "projectPath": "C:\\Users\\olegb\\source\\repos\\Rf\\Nuts.ReportsGenerator\\Nuts.ReportsGeneratorSimulator\\Nuts.ReportsGenerator.Simulator.csproj",
       "packagesPath": "C:\\Users\\olegb\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\olegb\\source\\repos\\Rf\\Nuts.ReportsGenerator\\Nuts.ReportsGeneratorSimulator\\obj\\",
       "projectStyle": "PackageReference",

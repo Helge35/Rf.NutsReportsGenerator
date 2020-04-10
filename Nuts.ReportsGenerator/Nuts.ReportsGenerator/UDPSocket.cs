@@ -5,6 +5,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
+using Nuts.ReportsGenerator.Entities;
 
 namespace Nuts.ReportsGenerator
 {
@@ -15,7 +16,7 @@ namespace Nuts.ReportsGenerator
         private UdpState state;
         private EndPoint epFrom;
         private AsyncCallback recv = null;
-        private const int StringLength = 130;
+        private const int StringLength = 32;
 
         public UdpSocket(string address, int port)
         {
@@ -40,27 +41,11 @@ namespace Nuts.ReportsGenerator
                 UdpState so = (UdpState)ar.AsyncState;
                 int bytes = _socket.EndReceiveFrom(ar, ref epFrom);
                 _socket.BeginReceiveFrom(so.Buffer, 0, bufSize, SocketFlags.None, ref epFrom, recv, so);
-                NutStatus status = ByteArrayToObject(so.Buffer);
-                Console.WriteLine("RECV: Data-  {2}-{3}-{4}-{5}", epFrom.ToString(), bytes, status.PData1, status.PData2, status.PData3, status.PData4);
+                Report report = new Report();
+                report.DeSerializeByteArray(so.Buffer);
+                Console.WriteLine("RECV: Data-  {2}-{3}-{4}", epFrom.ToString(), bytes, report.Var1, report.StrVar1, report.StrVar2);
 
             }, state);
-        }
-
-        private NutStatus ByteArrayToObject(byte[] arrBytes)
-        {
-            var status = new NutStatus();
-
-            status.PData1 = BitConverter.ToUInt32(SubArray(arrBytes, 0, 4));
-            status.PData2 = Encoding.ASCII.GetString(arrBytes, 4, StringLength);
-            status.PData3 = BitConverter.ToUInt32(SubArray(arrBytes, StringLength+4, 4));
-            status.PData4 = BitConverter.ToUInt32(SubArray(arrBytes, StringLength + 8, 4));
-
-            return status;
-        }
-
-        private static byte[] SubArray(byte[] arr, int index, int length)
-        {
-            return arr.Skip(index).Take(length).ToArray();
         }
 
     }

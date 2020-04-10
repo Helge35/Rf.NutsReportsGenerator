@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Configuration;
 using System.Threading;
+using Nuts.ReportsGenerator.Entities;
+using Nuts.ReportsGenerator.Simulator.Entities;
 
 namespace Nuts.ReportsGenerator.Simulator
 {
@@ -16,8 +18,8 @@ namespace Nuts.ReportsGenerator.Simulator
 
             do
             {
-                var status = PrepareSimulatedData();
-                c.Send(status);
+                var report =  PrepareSimulatedData();
+                c.Send(report);
 
                 Thread.Sleep(timeInterval);
             } while (true);
@@ -29,10 +31,15 @@ namespace Nuts.ReportsGenerator.Simulator
             return result != null ? result.ToString() : defaultValue;
         }
 
-        private static NutStatus PrepareSimulatedData()
+        private static Report  PrepareSimulatedData()
         {
-            UInt32 s = (UInt32)DateTime.Now.Second;
-            return new NutStatus() { PData1 = s, PData2 = "Test", PData3 = s + 2, PData4 = s + 3 };
+            var s = (uint)DateTime.Now.Second;
+            return new Report
+            {
+                Var1 = s, StrVar1 = "Rep str1", StrVar2 = "Rep str2", SystemStatus = SystemStatusEnum.HF,
+                Gd = new GdClass { Var1 = s+1, Var2 = s+1, Pr=new PrClass { Var1 = s+1, Var2 = s+2, Var3 = s+3, Var4 = s+4}},
+                Hd = new HdClass { Var1 = s + 10, Var2 = s + 10, Ir = new IrClass { Var1 = s + 10, Var2 = s + 20, Var3 = s + 30, Var4 = s + 40 } }
+            };
         }
     }
 }

@@ -6,7 +6,6 @@ namespace Nuts.ReportsGenerator
 {
     public class UdpState
     {
-
         public UdpState()
         {
             int bufSize = 8 * 1024;

@@ -9,3 +9,5 @@ C:\Users\olegb\source\repos\Rf\Nuts.ReportsGenerator\Nuts.ReportsGenerator\obj\D
 C:\Users\olegb\source\repos\Rf\Nuts.ReportsGenerator\Nuts.ReportsGenerator\obj\Debug\netcoreapp3.0\Nuts.ReportsGenerator.AssemblyInfo.cs
 C:\Users\olegb\source\repos\Rf\Nuts.ReportsGenerator\Nuts.ReportsGenerator\obj\Debug\netcoreapp3.0\Nuts.ReportsGenerator.dll
 C:\Users\olegb\source\repos\Rf\Nuts.ReportsGenerator\Nuts.ReportsGenerator\obj\Debug\netcoreapp3.0\Nuts.ReportsGenerator.pdb
+C:\Users\olegb\source\repos\Rf\Nuts.ReportsGenerator\Nuts.ReportsGenerator\obj\Debug\netcoreapp3.0\Nuts.ReportsGenerator.csproj.CoreCompileInputs.cache
+C:\Users\olegb\source\repos\Rf\Nuts.ReportsGenerator\Nuts.ReportsGenerator\obj\Debug\netcoreapp3.0\Nuts.ReportsGenerator.genruntimeconfig.cache
